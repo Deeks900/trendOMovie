@@ -11,3 +11,192 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbarIcon{
+  padding-right: 3px;
+}
+
+.navbarHeading{
+  font-family: georgia;
+  font-size: 38px;
+  font-weight: bold;
+  text-shadow: 1px 2px 2px silver,
+              1px 1px 1px rgb(216, 210, 224);
+               
+}
+
+.navbarText{
+  text-shadow: 1px 1px 1px silver,
+  1px 1px 1px rgb(229, 216, 247);
+}
+.banner{
+  width: 100%;
+  margin-top: 1vh;
+  margin-bottom: 3vh;
+  height: 70vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* styling the banner */
+.bannerImage{
+  width: 100vw;
+  height: 70vh;
+}
+.bannerTitle{
+  position: absolute;
+  top: 40vh;
+  left: 40vw;
+  font-size: 40px;
+  color: rgb(240, 239, 239);
+  font-family: georgia;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px silver,
+               1px 1px 1px #8115e6e0;
+}
+.bannerText{
+  position: absolute;
+  top: 50vh;
+  margin-left: 109px;
+  padding-left: 109px;
+  overflow: hidden;
+  width: 60rem;
+  word-wrap:break-word;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  font-family: roboto;
+  text-shadow: 0.8px 0.7px 0.8px silver,
+               0.7px 0.8px 0.3px #8115e6e0;
+}
+
+/* Applying CSS to movies cards*/
+.movieCards{
+  margin-left: 0;
+  margin-right: 0;
+}
+.movie{
+  margin-top: 15px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  height: 15.8rem;
+  object-fit: cover;
+  overflow-x: hidden;
+}
+.movieImage{
+  padding: 0px;
+  margin: 0px;
+  object-fit: cover;
+  height: 15.8rem;
+}
+.movieTitle{
+  position: absolute;
+  top: 4rem;
+  left: 1rem;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: roboto;
+  text-shadow: 1px 1px 1px silver,
+               1px 1px 2px #8115e6e0;
+} 
+
+.movieButtons{
+  position: absolute;
+  top: 8rem;
+  left: 4rem;
+}
+
+
+/*Pagiantion*/
+.pagination{
+  justify-content: center;
+  margin-top: 15px;
+}
+/* Responsiveness */
+@media screen and (max-width:1251px){
+  .bannerText{
+    width: 50rem;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media screen and (max-width:871px){
+  .banner{
+    width:100%;
+    height: 450px;
+    overflow-x:hidden;
+    overflow-y: hidden;
+    margin-left: 0;
+    margin-right: 0;
+    position:relative;
+  }
+  .bannerImage{
+    height: 450px;
+  }
+  .bannerTitle{
+    font-weight: normal;
+    font-size: 26px;
+    overflow:hidden;
+    position:absolute;
+    margin-left: -80px;
+    top:40%;
+    text-shadow: none;
+    
+  }
+  .bannerText{
+    display:none;
+  }
+  .movieCards{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .moviesContainer{
+    padding-left: 4px;
+    margin-left: 8px;
+    width:100%;
+    overflow-x:hidden;
+  }
+  .movieCards{
+    max-width:100%;
+    overflow-x:hidden;
+  }
+  .movieTitle{
+    font-size: 22px;
+  }
+  .navbarHeading{
+    font-weight:normal;
+    font-size:20px;
+    padding-left: -3px;
+    margin-left: -20px;
+    padding-top: 10px;
+  }
+  .navbarIcon{
+    width: 1px;
+    height: 1px;
+    padding-right: 25px;
+    padding-left: 0.8px;
+    margin-left: -10px;
+  }
+  .navbarText{
+    font-size:17px;
+    padding-left: 5px;
+    font-weight: normal;
+    margin-left:-28px;
+    padding-top:5px;
+  }
+  .leftFavourites{
+    padding-left: 15px;
+  }
+  .rightFavourites{
+    overflow:auto;
+  }
+  .searchGroups{
+    padding-top: 18px;
+    padding-left: 0px;
+  }
+}
